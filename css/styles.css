@@ -19,8 +19,10 @@ h1 {
 }
 
 .menu li {
-    float: left; /* Menu a esquerda */   
+    float: left; /* Menu a esquerda */
 }
-.menu li a {
+.menu li a { /* Cor dos itens */
     color: #FF8C00;
+    margin: 5px; /* Para não ficar colado */
+    padding: 5px;
 }
