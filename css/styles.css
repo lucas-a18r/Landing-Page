@@ -6,4 +6,6 @@ h1 {
     color: #FF8C00;
     text-align: center; /*alinhando o texto */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px; /* Para não ficar colado */
+    padding: 5px;
 }
