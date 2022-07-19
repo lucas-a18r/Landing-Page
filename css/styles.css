@@ -25,4 +25,5 @@ h1 {
     color: #FF8C00;
     margin: 5px; /* Para não ficar colado */
     padding: 5px;
+    display: flex; /* Exibição Flexível */
 }
