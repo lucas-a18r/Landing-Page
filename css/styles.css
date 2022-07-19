@@ -15,4 +15,5 @@ h1 {
 .menu {
     color:#FF8C00;
     float: right; /* alinhado a esquerda */
+    list-style: none; /* removendo estilo lista */
 }
