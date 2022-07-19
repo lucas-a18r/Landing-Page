@@ -1,0 +1,7 @@
+* { /* Reset (por padrão) */
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #757575;
+}
