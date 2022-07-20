@@ -16,8 +16,9 @@ h1 {
 }
 main {
     color: #F8F8FF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center; /* alinhando o texto */
-    margin: 50px; /* Separar um pouco */
+    margin: 50px; /* Separar um pouco /*/
 }
 .menu {
     border: 2px solid #FF8C00;
