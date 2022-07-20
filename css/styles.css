@@ -19,7 +19,7 @@ h1 {
     list-style: none; /* removendo estilo lista */
     position: relative;
     margin-top: -55px; /* Margen Superior */ 
-    background-color: #E6E6FA; /* Cor Fundo */
+    background-color: grey; /* Cor Fundo */
 }
 .menu li {
     float: left; /* Menu a esquerda */
