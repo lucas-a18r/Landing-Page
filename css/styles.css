@@ -8,13 +8,13 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h1 {
-    color: #FF8C00;
+    color: #F8F8FF;
     text-align: left; /* alinhando o texto */
     margin: 5px; /* Para não ficar colado */
     padding: 5px;
 }
 .menu {
-    border: 2px solid #BDB76B;
+    border: 2px solid #FF8C00;
     float: right; /* alinhado a direita */
     list-style: none; /* removendo estilo lista */
     position: relative;
@@ -25,7 +25,7 @@ h1 {
     float: left; /* Menu a esquerda */
 }
 .menu li a { /* Cor dos itens */
-    color: #FF8C00;
+    color: #000;
     margin: 5px; /* Para não ficar colado */
     padding: 5px;
     text-decoration: none; /* Removendo Sublinhado */
@@ -33,5 +33,5 @@ h1 {
     padding: 10px 20px; /* Espaço dos itens Menu */
 }
 .menu li a:hover { /* Passar o mouse em cima do item*/ 
-    background-color: #000;
+    background-color: #FF8C00;
 }
