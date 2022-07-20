@@ -23,6 +23,10 @@ main {
     height: 140px;
     padding: 20px;
 }
+.texto2 {
+    color: #F8F8FF;
+    margin: 10px;
+}
 .menu {
     border: 2px solid #FF8C00;
     float: right; /* alinhado a direita */
