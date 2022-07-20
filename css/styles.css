@@ -17,6 +17,7 @@ h1 {
 main {
     color: #F8F8FF;
     text-align: center; /* alinhando o texto */
+    margin: 50px; /* Separar um pouco */
 }
 .menu {
     border: 2px solid #FF8C00;
