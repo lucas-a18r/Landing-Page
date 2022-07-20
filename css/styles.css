@@ -14,12 +14,12 @@ h1 {
     padding: 5px;
 }
 .menu {
-    border: 1px solid #FF8C00;
+    border: 2px solid #BDB76B;
     float: right; /* alinhado a direita */
     list-style: none; /* removendo estilo lista */
     position: relative;
     margin-top: -55px; /* Margen Superior */ 
-    background-color: grey; /* Cor Fundo */
+    background-color: #F8F8FF; /* Cor Fundo */
 }
 .menu li {
     float: left; /* Menu a esquerda */
