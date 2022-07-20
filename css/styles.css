@@ -14,7 +14,7 @@ h1 {
     padding: 5px;
     text-shadow: #FF8C00 2px 2px 3px; /* Sombra txt*/
 }
-h2 {
+main {
     color: #F8F8FF;
     text-align: center; /* alinhando o texto */
 }
