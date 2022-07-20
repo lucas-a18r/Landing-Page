@@ -14,7 +14,7 @@ h1 {
 }
 .menu {
     border: 1px solid #FF8C00;
-    float: right; /* alinhado a esquerda */
+    float: right; /* alinhado a direita */
     list-style: none; /* removendo estilo lista */
 }
 .menu li {
