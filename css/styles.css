@@ -1,6 +1,7 @@
 * { /* Reset (por padrão) */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     background-color: #000; /* cor de fundo */
@@ -16,6 +17,9 @@ h1 {
     border: 1px solid #FF8C00;
     float: right; /* alinhado a direita */
     list-style: none; /* removendo estilo lista */
+    position: static;
+    margin-top: -55px; /* Margen Superior */ 
+    background-color: #E6E6FA; /* Cor Fundo */
 }
 .menu li {
     float: left; /* Menu a esquerda */
