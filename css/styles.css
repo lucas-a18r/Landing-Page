@@ -32,3 +32,6 @@ h1 {
     display: flex; /* Exibição Flexível */
     padding: 10px 20px; /* Espaço dos itens Menu */
 }
+.menu li a:hover { /* Passar o mouse em cima do item*/ 
+    background-color: #000;
+}
