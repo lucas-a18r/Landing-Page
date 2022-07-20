@@ -17,7 +17,6 @@ h1 {
     float: right; /* alinhado a esquerda */
     list-style: none; /* removendo estilo lista */
 }
-
 .menu li {
     float: left; /* Menu a esquerda */
 }
