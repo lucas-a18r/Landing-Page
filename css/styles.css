@@ -5,11 +5,11 @@
 }
 body {
     background-color: #000; /* cor de fundo */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 h1 {
     color: #FF8C00;
     text-align: left; /* alinhando o texto */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 5px; /* Para não ficar colado */
     padding: 5px;
 }
@@ -17,7 +17,7 @@ h1 {
     border: 1px solid #FF8C00;
     float: right; /* alinhado a direita */
     list-style: none; /* removendo estilo lista */
-    position: static;
+    position: relative;
     margin-top: -55px; /* Margen Superior */ 
     background-color: #E6E6FA; /* Cor Fundo */
 }
