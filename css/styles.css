@@ -12,6 +12,11 @@ h1 {
     text-align: left; /* alinhando o texto */
     margin: 5px; /* Para não ficar colado */
     padding: 5px;
+    text-shadow: #FF8C00 2px 2px 3px; /* Sombra txt*/
+}
+h2 {
+    color: #F8F8FF;
+    text-align: center; /* alinhando o texto */
 }
 .menu {
     border: 2px solid #FF8C00;
