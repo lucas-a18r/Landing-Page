@@ -19,6 +19,9 @@ main {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center; /* alinhando o texto */
     margin: 50px; /* Separar um pouco /*/
+    border: #FF8C00 solid 2px; /*Borda do main*/ 
+    height: 140px;
+    padding: 20px;
 }
 .menu {
     border: 2px solid #FF8C00;
