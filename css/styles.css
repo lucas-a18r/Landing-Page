@@ -33,6 +33,7 @@ main {
     position: relative;
     margin-top: -55px; /* Margen Superior */ 
     background-color: #F8F8FF; /* Cor Fundo */
+    text-transform: capitalize;
 }
 .menu li {
     float: left; /* Menu a esquerda */
