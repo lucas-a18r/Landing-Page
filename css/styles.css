@@ -12,7 +12,7 @@ h1 {
     text-align: left; /* alinhando o texto */
     margin: 5px; /* Para não ficar colado */
     padding: 5px;
-    text-shadow: #FF8C00 2px 2px 3px; /* Sombra txt*/
+    text-shadow: #EEE8AA 3px 2px 5px; /* Sombra txt*/
 }
 main {
     color: #F8F8FF;
@@ -46,5 +46,5 @@ main {
     padding: 10px 20px; /* Espaço dos itens Menu */
 }
 .menu li a:hover { /* Passar o mouse em cima do item*/ 
-    background-color: #FF8C00;
+    background-color: #EEE8AA;
 }
