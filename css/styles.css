@@ -18,19 +18,16 @@ main {
     color: #F8F8FF;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center; /* alinhando o texto */
-    margin: 50px; /* Separar um pouco /*/
-    border: #FF8C00 solid 2px; /*Borda do main*/ 
+    margin: 50px; /* Separar um pouco /*/ 
     height: 210px;
     padding: 10px;
 }
 .texto2 {
     color: #F8F8FF;
     margin: 20px;
-    border: #FF8C00 solid 1px;
     padding: 20px;
 }
 .menu {
-    border: 2px solid #FF8C00;
     float: right; /* alinhado a direita */
     list-style: none; /* removendo estilo lista */
     position: relative;
