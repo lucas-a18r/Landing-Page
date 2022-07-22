@@ -30,6 +30,11 @@ main {
     margin: 20px;
     padding: 20px;
 }
+@media only screen and (max-width: 959px) { /* tem que ver*/
+    p{ /*conteúdo relacionado ao media query*/
+        font-size: 10px; 
+    }
+}
 .menu {
     float: right; /* alinhado a direita */
     list-style: none; /* removendo estilo lista */
