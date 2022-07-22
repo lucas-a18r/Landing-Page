@@ -6,6 +6,8 @@
 body {
     background-color: #000; /* cor de fundo */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-image: url(../img/space_orange.jpg);
+    background-repeat: no-repeat; /*para não se repetir imagem*/
 }
 h1 {
     color: #F8F8FF;
@@ -21,6 +23,7 @@ main {
     margin: 50px; /* Separar um pouco /*/ 
     height: 210px;
     padding: 10px;
+    /*.. para nível anterior*/
 }
 .texto2 {
     color: #F8F8FF;
