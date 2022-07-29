@@ -37,21 +37,27 @@ h2 {
     text-transform: capitalize;
     text-shadow: 1px 1px #FF8C00;
 }
-.form1 { /* Tenho que editar o formulário () */
-    background-color: #FF8C00;
-    margin: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80% ;
-    height: max(100px,1vw);
-    border-radius: 10px; /* arredonda borda do formulário */      
+input[type=text] { /* algumas alterações a serem feitas no formulario! */
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    resize: vertical; /* redimensiona vertical */
 }
-#nome1, #nome2 {
+label {
     color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block; /* Exibição mais adequada */
+    padding: 12px 12px 12px 0;
 }
-#nome1, #nome2, #pnome{
-    width: 50vw; /*Centralizando formulario */
-    margin-left : 25vw; /* com viewport */
+.form1 {
+    background-color: #FF8C00;
+    margin-top: 50px; /* margem em relação ao topo */
+    width: 500px; /* largura */
+    height: 250px; /* altura */
+    padding: 25px;
+    margin-left: auto; /* centralização do  formulário */
+    margin-right: auto;
+    border: double 5px #000;
 }
 .menu {
     text-align: right; /* Texto alinhado ao Centro */
