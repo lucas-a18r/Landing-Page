@@ -1,6 +1,5 @@
 Desenvolvimento de uma landing page com HTML e CSS.
 
-Posteriormente a adição de JavaScript e das Imagens.
-
+Posteriormente, a adição de JavaScript e das Imagens.
 (Algumas atualizações a serem feitas)
 

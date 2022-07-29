@@ -3,57 +3,165 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header {
+    background-color: #FF8C00;
+    padding: 25px 15px; /* Inferior e Superior */
+    border-top: solid 3px #778899;
+    border-bottom: solid 3px #778899;
+}
 body {
-    background-color: #000; /* cor de fundo */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* background-image: url(../img/space_orange.jpg);
-    background-repeat: no-repeat; /*para não se repetir imagem*/
+    background-color: #000;
+    font-family: 'Times New Roman', Times, serif;
 }
 h1 {
-    color: #F8F8FF;
-    text-align: left; /* alinhando o texto */
-    margin: 5px; /* Para não ficar colado */
+    font-weight: bold;
+    color: #000;
+    text-align: left; 
+    text-shadow: 2px 1px #FFFAFA; /* Sombrear o h1 */
+    font-size:max(10px, 3vw); /* vw - viewport (largura da janela de visualização)*/
+}
+h2 {
+    color: #F5F5F5;
     padding: 5px;
-    text-shadow: #EEE8AA 3px 2px 5px; /* Sombra txt*/
+    margin: 12px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px #FF8C00;
 }
-main {
-    color: #F8F8FF;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center; /* alinhando o texto */
-    margin: 50px; /* Separar um pouco /*/ 
-    height: 210px;
-    padding: 10px;
-    /*.. para nível anterior*/
+.texto1, .texto2, .texto3, .texto4,.texto5, .texto6 {
+    color: #F5F5F5;
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px #FF8C00;
 }
-.texto2 {
-    color: #F8F8FF;
-    margin: 20px;
-    padding: 20px;
+.form1 { /* Tenho que editar o formulário () */
+    background-color: #FF8C00;
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80% ;
+    height: max(100px,1vw);
+    border-radius: 10px; /* arredonda borda do formulário */      
 }
-@media only screen and (max-width: 959px) { /* tem que ver*/
-    p{ /*conteúdo relacionado ao media query*/
-        font-size: 10px; 
-    }
+#nome1, #nome2 {
+    color: #000;
+}
+#nome1, #nome2, #pnome{
+    width: 50vw; /*Centralizando formulario */
+    margin-left : 25vw; /* com viewport */
 }
 .menu {
-    float: right; /* alinhado a direita */
-    list-style: none; /* removendo estilo lista */
-    position: relative;
-    margin-top: -55px; /* Margen Superior */ 
-    background-color: #F8F8FF; /* Cor Fundo */
-    text-transform: capitalize;
+    text-align: right; /* Texto alinhado ao Centro */
+    background-color: #FF8C00;
+    padding: 15px 10px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+/*  border-left: solid 3px #000; estava testando
+    border-right: solid 3px #000; algumas opções
+    margin-left: 100px; para modificar
+    margin-right: 100px; o meu Cabeçalho e Menu
+    /* margin: 0 400px; */
 }
 .menu li {
-    float: left; /* Menu a esquerda */
+    display: inline-block; /* Menu em linha */
 }
-.menu li a { /* Cor dos itens */
+.menu li a {
+    color: #FFFAFA;
+    text-decoration: none; /* Removendo sublinhado (decoração)*/
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000;
+    margin: 25px;
+    padding: 15px;
+}
+.menu a:hover {
+    background-color: #778899;
     color: #000;
-    margin: 5px; /* Para não ficar colado */
-    padding: 5px;
-    text-decoration: none; /* Removendo Sublinhado */
-    display: flex; /* Exibição Flexível */
-    padding: 10px 20px; /* Espaço dos itens Menu */
+    text-shadow: 1px 1px #FF8C00;
 }
-.menu li a:hover { /* Passar o mouse em cima do item*/ 
-    background-color: #EEE8AA;
+.footer {
+    background-color: #FF8C00;
+    border-top: solid 3px #778899;
+    padding: 15px;
+    text-align: center; /* Algumas edições no rodapé */
+    color: #000;
+    font-size:max(16px, 1vw); /* para visualização */
+    bottom: 0; /* Para o rodpé se comporta */
+    left: 0; /* no final da página */
+    width: 100%;
+    position: absolute; /* OK */
+}
+@media screen and (max-width:768px) { /* Para os itens do menu ficarem responsivo */
+    .menu {
+        border-right: 3px solid #778899;
+        border-left: 3px solid #778899;
+        border-bottom: 3px solid #778899;
+        font-size: max(12px,1vw);
+    }
+    .menu li{ 
+        display: flex; /* Exibição flexível */
+        float: none;
+        width: 100%;
+    }
+    h1 {
+        float: left;
+        margin: -12px;
+        padding: -25px; 
+        font-size:max(20px, 1vw); /* Usada para o caso especifico da responsividade do texto */
+    }
+    h2 {
+        display: none; /* Uma sumida no h2 */
+        /* float: left; 
+        font-size:max(12px, 1vw); */
+    }
+    .texto1 {
+        float: left;
+        margin: -25px;
+        padding: 18px;
+        text-align: center;      
+        font-size: max(11px, 1vw);
+    }
+    .texto2,.texto3,.texto4,.texto5,.texto6 {
+        float: center;
+        color: #FF8C00;
+        text-shadow: none;
+        margin: 2px;
+        padding: 2px;
+        text-align: left;  
+        text-transform: uppercase;    
+        font-size: max(11px, 1vw);
+    }
+}
+@media screen and (max-width:600px) { /* Para os itens do menu ficarem responsivo */
+    .menu li{ /* media query meu novo amigo. */
+        display: flex; /* Exibição flexível */
+        float: none;
+        width: 100%;
+    }
+    h1 {
+        float: left; 
+        font-size:max(20px, 1vw);
+    }
+    h2 {
+        float: left; 
+        text-align: center;
+        font-size:max(20px, 1vw);
+    }
+
+    .texto2 {
+        float: center;
+        color: #FF8C00;
+        text-shadow: none;
+        margin: 2px;
+        padding: 2px;
+        text-align: left;  
+        text-transform: uppercase;    
+        font-size: max(11px, 1vw);
+    }
+    .texto1, .texto3, .texto5, .texto6, .texto7 {
+        display: none;
+    }
 }
