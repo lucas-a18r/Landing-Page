@@ -28,7 +28,7 @@ h2 {
     text-transform: capitalize;
     text-shadow: 1px 1px #FF8C00;
 }
-.texto1, .texto2, .texto3, .texto4,.texto5, .texto6 {
+.texto1, .texto2 {
     color: #F5F5F5;
     font-size: 18px;
     padding: 5px;
@@ -37,28 +37,6 @@ h2 {
     text-transform: capitalize;
     text-shadow: 1px 1px #FF8C00;
 }
-input[type=text] { /* algumas alterações a serem feitas no formulario! */
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    resize: vertical; /* redimensiona vertical */
-}
-label {
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline-block; /* Exibição mais adequada */
-    padding: 12px 12px 12px 0;
-}
-.form1 {
-    background-color: #FF8C00;
-    margin-top: 50px; /* margem em relação ao topo */
-    width: 500px; /* largura */
-    height: 250px; /* altura */
-    padding: 25px;
-    margin-left: auto; /* centralização do  formulário */
-    margin-right: auto;
-    border: double 5px #000;
-}
 .menu {
     text-align: right; /* Texto alinhado ao Centro */
     background-color: #FF8C00;
@@ -66,11 +44,6 @@ label {
     position: absolute;
     top: 20px;
     right: 15px;
-/*  border-left: solid 3px #000; estava testando
-    border-right: solid 3px #000; algumas opções
-    margin-left: 100px; para modificar
-    margin-right: 100px; o meu Cabeçalho e Menu
-    /* margin: 0 400px; */
 }
 .menu li {
     display: inline-block; /* Menu em linha */
@@ -88,6 +61,53 @@ label {
     color: #000;
     text-shadow: 1px 1px #FF8C00;
 }
+.form1 {
+    background-color: #FF8C00;
+    margin-top: 30px; /* margem em relação ao topo */
+    width: 500px; /* largura */
+    height: 290px; /* altura */
+    padding: 25px;
+    margin-left: auto; /* centralização do  formulário */
+    margin-right: auto;
+    border: double 5px #000;
+}
+label {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block; /* Exibição mais adequada */
+    padding: 12px 12px 12px 0;
+}
+#comentarios {
+    resize: none;
+    color: #778899;
+    margin: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+input[type=text],input[type=email] { /* algumas alterações feitas no formulario! */
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    resize: vertical; /* redimensiona vertical */
+    outline: none;
+}
+input[type=submit] {
+    margin: 12px;
+    margin-left: 2px;
+    width: 80px;
+    height: 30px;
+    color: #F5F5F5;
+    background-color: #000;
+    border: 2px solid #778899;
+}
+input[type=submit]:hover {
+    margin: 12px;
+    margin-left: 1px;
+    color: #000;
+    background-color: #FF8C00;
+    border: 2px solid #F5F5F5;
+}
 .footer {
     background-color: #FF8C00;
     border-top: solid 3px #778899;
@@ -98,20 +118,9 @@ label {
     bottom: 0; /* Para o rodpé se comporta */
     left: 0; /* no final da página */
     width: 100%;
-    position: absolute; /* OK */
+    position: fixed; /* OK */
 }
 @media screen and (max-width:768px) { /* Para os itens do menu ficarem responsivo */
-    .menu {
-        border-right: 3px solid #778899;
-        border-left: 3px solid #778899;
-        border-bottom: 3px solid #778899;
-        font-size: max(12px,1vw);
-    }
-    .menu li{ 
-        display: flex; /* Exibição flexível */
-        float: none;
-        width: 100%;
-    }
     h1 {
         float: left;
         margin: -12px;
@@ -124,39 +133,8 @@ label {
         font-size:max(12px, 1vw); */
     }
     .texto1 {
-        float: left;
-        margin: -25px;
-        padding: 18px;
-        text-align: center;      
-        font-size: max(11px, 1vw);
+        display: none;
     }
-    .texto2,.texto3,.texto4,.texto5,.texto6 {
-        float: center;
-        color: #FF8C00;
-        text-shadow: none;
-        margin: 2px;
-        padding: 2px;
-        text-align: left;  
-        text-transform: uppercase;    
-        font-size: max(11px, 1vw);
-    }
-}
-@media screen and (max-width:600px) { /* Para os itens do menu ficarem responsivo */
-    .menu li{ /* media query meu novo amigo. */
-        display: flex; /* Exibição flexível */
-        float: none;
-        width: 100%;
-    }
-    h1 {
-        float: left; 
-        font-size:max(20px, 1vw);
-    }
-    h2 {
-        float: left; 
-        text-align: center;
-        font-size:max(20px, 1vw);
-    }
-
     .texto2 {
         float: center;
         color: #FF8C00;
@@ -167,7 +145,53 @@ label {
         text-transform: uppercase;    
         font-size: max(11px, 1vw);
     }
-    .texto1, .texto3, .texto5, .texto6, .texto7 {
+    .menu {
+        border-right: 3px solid #778899;
+        border-left: 3px solid #778899;
+        border-bottom: 3px solid #778899;
+        font-size: max(12px,1vw);
+    }
+    .menu li{ 
+        display: flex; /* Exibição flexível */
+        float: none;
+        width: 100%;
+    }
+    .form1 { /* dando uma sumida no formulario */
+        display: none;
+    }
+    .footer { /* dando uma sumida no rodapé */
+        display: none;
+    } 
+}
+@media screen and (max-width:600px) {  /* Para os itens do menu ficarem responsivo */
+    h1 {
+        float: left; 
+        font-size:max(20px, 1vw);
+    }
+    h2 {
+        float: left; 
+        text-align: center;
+        font-size:max(20px, 1vw);
+    }
+    .texto1 {
+        display: none;
+    }
+    .texto2, .texto3 {
+        float: center;
+        color: #FF8C00;
+        text-shadow: none;
+        margin: 2px;
+        padding: 2px;
+        text-align: left;  
+        text-transform: uppercase;    
+        font-size: max(11px, 1vw);
+    }
+    .menu li{  /* media query meu novo amigo. */
+        display: flex; /* Exibição flexível */
+        float: none;
+        width: 100%;
+    }
+    .form1 { /* fazendo o formulário sumir */
         display: none;
     }
 }
